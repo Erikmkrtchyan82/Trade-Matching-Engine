@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+if [[ "$(which python3 2&1>/dev/null)" ]]; then
+    python3 test.py
+else
+    echo "Python3 is not installed"
+    exit 1
+fi
